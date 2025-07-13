@@ -1,0 +1,70 @@
+<div class="conteiner">
+
+  <div class="titulo">
+    <h2>Espacios y deportes</h2>
+  </div>
+  <div class="textoPrincipal">
+    <p>R5 está formado por nodos que unen deporte, diversión y bienestar.</p>
+  </div>
+
+
+  <div class="scroll-container">
+    <section class="seccion" id="deporte1">
+      <div class="black"></div>
+      <div class="tituloSeccion">
+        <p>
+          CANCHAS 360° INDOOR DE
+        </p>
+        <h3>PADEL</h3>
+      </div>
+      <div class="contenidoSeccion">
+        <p>ÚNICAS EN LA CIUDAD.</p>
+        <p>4 canchas de padel indoor. Vestuarios y palcos para expectadores. Viví el pádel como nunca. Jugá sin
+          interrupciones,
+          todo el año, todo el día.</p>
+      </div>
+    </section>
+    <section class="seccion" id="deporte2">
+      <div class="black"></div>
+      <div class="tituloSeccion">
+
+        <p>
+          CANCHA DE
+        </p>
+        <h3>FÚTBOL 7</h3>
+      </div>
+      <div class="contenidoSeccion">
+        <p>Con pasto sintético de calidad, luces, vestuarios y todo listo para que vengas a jugar con amigos o competir
+        </p>
+      </div>
+    </section>
+    <section class="seccion" id="deporte3">
+      <div class="black"></div>
+      <div class="tituloSeccion">
+        <p>
+          3 PLANTAS DE </p>
+        <h3>GIMANCIOS <br>Y ENTRENAMIENTO </h3>
+      </div>
+      <div class="contenidoSeccion">
+        <p>Nodo donde confluye la fuerza.</p>
+        <p>En R5 entrenás en grande: tres plantas diseñadas para que te muevas a tu ritmo. Desde máquinas hasta
+          entrenamiento
+          funcional y de alto rendimiento.</p>
+      </div>
+
+
+
+    </section>
+  </div>
+
+  <div class="navegacion">
+    <div class="linea"></div>
+    <div *ngFor="let seccion of secciones" [class.active]="activeSection === seccion.id" (click)="scrollTo(seccion.id)"
+      class="punto">
+    </div>
+    <div class="linea"></div>
+  </div>
+
+
+
+</div>

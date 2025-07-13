@@ -1,0 +1,100 @@
+.conteiner {
+    width: 100%;
+    padding: 0 8vw;
+    position: relative;
+    margin-top: 10vh;
+    height: 70vh;
+}
+.textos p{
+    margin-top: 5vh;
+}
+.form {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 68vw;
+}
+
+.form .item {
+    width: 32vw;
+}
+
+.form .item input {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #c8f81a;
+    border-radius: 0.2vw;
+    display: flex;
+    align-content: center;
+    height: 2vw;
+    color: white;
+    padding-left: 1vw;
+}
+.form .item input:focus{
+    outline: none;
+}
+.form .item p{
+    font-weight: 500;
+    margin-top: 0.1vw;
+    font-size: 0.8vw;
+    
+}
+
+.redes{
+    margin-top: 10vh;
+    width: 45vw;
+    display: flex;
+    justify-content: space-between;
+}
+.elem{
+    display: flex;
+    flex-direction: column;
+}
+.elem p{
+    color: #c8f81a;
+    font-weight: 500;
+}
+.elem a{
+  text-decoration: none;
+  color: white;
+  margin-bottom: 1vw;
+}
+.elem a img {
+ margin-right: 0.5vw;
+}
+
+.imagenes{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 36vw;
+    height:36vw ;
+   
+    
+}
+.imagenes2{
+        margin-top: 2vw;
+    width: 36vw;
+    height: 36vw;
+    position: relative;
+    top: 0;
+}
+.ciculo{
+    position: absolute;
+    bottom: -10vh;
+    left: 8vw;
+    rotate:19deg;
+    width: 75%;
+}
+.logo{
+    bottom: 25%;
+        right: 10%;
+    position: absolute;
+    width: 30%;
+    
+}
+.imagenes2 img{
+    width: 100%;
+}
+

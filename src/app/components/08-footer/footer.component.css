@@ -1,0 +1,60 @@
+.conteiner{
+    width: 100%;
+}
+
+.trabaja {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 2vw 1vw 8vw;
+    background: #2E9380;
+    background: linear-gradient(90deg, rgba(46, 147, 128, 1) 15%, rgba(0, 0, 0, 1) 59%);
+}
+
+.trabaja p {
+    margin: 0px;
+
+}
+
+.trabaja h4 {
+    margin: 0px;
+    font-size: 1vw;
+
+}
+
+.form {
+    width: 50%;
+    height: 3vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 60vw;
+}
+
+.form input {
+    background-color: transparent;
+    border: none;
+    padding-left: 2vw;
+
+}
+
+
+input:focus {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.form button {
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 50vw;
+    height: 2.5vw;
+    margin-top: 0.25vw;
+    margin-right: 0.25vw;
+    padding: 0 1.5vw;
+}

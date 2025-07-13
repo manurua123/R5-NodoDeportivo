@@ -1,0 +1,33 @@
+.conteiner {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjeta {
+    width: 96vw;
+    height: 90vh;
+    margin: auto;
+    background-color: #c8f81a;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+}
+.textos{
+    width: 27vw;
+    padding: 5vw 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: black;
+}
+.imagenes{
+    width: 70vw;
+    margin: 2vw ;
+    border-radius: 2vw;
+    background-color: #d9d9d9;
+}

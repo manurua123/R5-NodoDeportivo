@@ -1,0 +1,154 @@
+.conteiner {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    margin-top: 5vh;
+    padding-top: 5vh;
+}
+
+.imgFondo {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 1;
+}
+
+.imgFondo img {
+    width: 110%;
+}
+
+.titulo {
+    width: 27vw;
+    background-color: #c8f81a;
+    color: black;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 3vw;
+    padding-left: 8vw;
+    border-top-right-radius: 80px 80px;
+    border-bottom-right-radius: 80px 80px;
+    margin-top: 10vh;
+}
+
+.textos {
+    padding-left: 10vw;
+    margin-top: 2vw;
+    line-height: 1vw;
+}
+
+.tarjeta {
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    border-radius: 2vw;
+    width: 86vw;
+    height: 22vw;
+    margin: 5vh 7vw 10vh 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+}
+
+.colum {
+    width: 28%;
+    position: relative;
+    padding: 5vw;
+    height: 14vw;
+}
+
+.colum h3 {
+    font-size: 1vw;
+    position: absolute;
+    left: 14%;
+    top: 10%;
+}
+
+.colum p {
+    position: absolute;
+    left: 14%;
+    top: 25%;
+}
+
+.colum a {
+    color: #6808C4;
+    text-decoration: none;
+    font-weight: 500;
+    position: absolute;
+    left: 14%;
+    bottom: 10%;
+    
+
+}
+.colum a:hover{
+   opacity: 0.9;
+}
+
+.colum a img {
+    margin-left: 0.5vw;
+}
+
+.barberia {
+    border-left: 2px solid black;
+    border-right: 2px solid black
+}
+
+.trabaja {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 2vw 1vw 8vw;
+    background: #2E9380;
+    background: linear-gradient(90deg, rgba(46, 147, 128, 1) 15%, rgba(0, 0, 0, 1) 59%);
+}
+
+.trabaja p {
+    margin: 0px;
+
+}
+
+.trabaja h4 {
+    margin: 0px;
+    font-size: 1vw;
+
+}
+
+.form {
+    width: 50%;
+    height: 3vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 60vw;
+}
+
+.form input {
+    background-color: transparent;
+    border: none;
+    padding-left: 2vw;
+
+}
+
+
+input:focus {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.form button {
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 50vw;
+    height: 2.5vw;
+    margin-top: 0.25vw;
+    margin-right: 0.25vw;
+    padding: 0 1.5vw;
+}

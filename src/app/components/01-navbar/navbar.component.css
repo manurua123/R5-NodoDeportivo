@@ -1,0 +1,42 @@
+.conteiner{
+    width: 82vw;
+    left: 9vw;
+    top: 4vw;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999999;
+}
+.logo{
+    width: 2vw;
+}
+.logo img{
+    width: 100%;
+}
+
+.menu{
+
+}
+.menu button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin: 0 1vw;
+}
+.menu button:last-child{
+   border: 1px solid #c8f81a;
+   padding: 0.5vw 1vw;
+    border-radius: 0.5vw;
+}
+
+.menu button:hover{
+    color: #c8f81a;
+}
+
+.menu button:hover:last-child {
+    color: black;
+    background-color: #c8f81a;
+
+}

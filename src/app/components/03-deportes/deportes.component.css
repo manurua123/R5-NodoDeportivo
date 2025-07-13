@@ -1,0 +1,149 @@
+.conteiner {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.titulo {
+    width: 35vw;
+    background-color: #c8f81a;
+    position: absolute;
+    top: 13vw;
+    left: 0;
+    color: black;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 3vw;
+    padding-left: 8vw;
+    border-top-right-radius: 80px 80px;
+    border-bottom-right-radius: 80px 80px;
+    z-index: 2
+}
+
+.titulo h2 {
+    line-height: 0;
+
+}
+
+.textoPrincipal {
+    position: absolute;
+    left: 60vw;
+    top: 13vw;
+    width: 20vw;
+    z-index: 2
+}
+
+
+
+#deporte1 {
+    background-image: url('/img/deportes-padel.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#deporte2 {
+    background-image: url('/img/deporte-futbol.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#deporte3 {
+    background-image: url('/img/deporte-musculacion.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.black{
+    position: absolute;
+    left: 0;
+
+    width: 100vw;
+    height: 100%;
+background: linear-gradient(90deg, rgba(0, 0, 0, 1) 20%, rgba(237, 221, 83, 0) 100%);
+}
+
+/* Estilo contenedor general */
+.scroll-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+/* Cada sección ocupa la pantalla completa */
+.seccion {
+    height: 100vh;
+    scroll-snap-align: start;
+    color: white;
+    padding: 0px 9vw;
+    position: relative;
+
+}
+
+.tituloSeccion {
+    position: absolute;
+    left: 8vw;
+    bottom: 7vw;
+}
+
+.tituloSeccion p {
+    line-height: 0;
+}
+
+.tituloSeccion h3 {
+    font-size: 5vw;
+    line-height: 5vw;
+}
+
+#deporte3 .tituloSeccion h3 {
+    font-size: 4vw;
+    line-height: 4vw;
+}
+
+.contenidoSeccion {
+    position: absolute;
+    left: 60vw;
+    bottom: 7vw;
+    width: 25vw;
+
+}
+
+.contenidoSeccion {}
+
+/* Navegación con puntitos */
+.navegacion {
+    position: absolute;
+    right: 6vw;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    z-index: 10;
+}
+
+.linea {
+    height: 10vw;
+    width: 2px;
+    background-color: white;
+    opacity: 0.5;
+}
+
+.punto {
+    width: 0.6vw;
+    height: 0.6vw;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    opacity: 0.5;
+}
+
+.punto.active {
+    background: white;
+    width: 0.7vw;
+    height: 0.7vw;
+    opacity: 1;
+
+}
