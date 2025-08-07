@@ -1,4 +1,4 @@
-<div class="conteiner">
+<div class="conteiner desktop">
   <div class="logo" (click)="scrollToSection('Home')">
     <img src="img/Logo.svg" alt="">
   </div>
@@ -7,5 +7,33 @@
     <button (click)="scrollToSection('Espacios')" >Espacios</button>
     <button (click)="scrollToSection('Servicios')">Servicios</button>
     <button (click)="scrollToSection('Contacto')">Contacto</button>
+  </div>
+</div>
+
+<!-- container principal -->
+<div class="conteiner mobile">
+  <!-- Logo -->
+  <div class="logo" (click)="scrollToSection('Home')">
+    <img src="img/Logo.svg" alt="">
+  </div>
+
+  <!-- Botón hamburguesa -->
+  <div class="hamburguesa" (click)="toggleMenu()">
+    <div [class.active]="menuAbierto" class="bar1"></div>
+    <div [class.active]="menuAbierto" class="bar2"></div>
+    <div [class.active]="menuAbierto" class="bar3"></div>
+  </div>
+
+  <!-- Menú deslizante -->
+  <div class="menu-desplegable" [class.abierto]="menuAbierto">
+    <button (click)="scrollToSection('Deportes'); toggleMenu()">Deportes</button>
+    <button (click)="scrollToSection('Espacios'); toggleMenu()">Espacios</button>
+    <button (click)="scrollToSection('Servicios'); toggleMenu()">Servicios</button>
+    <button (click)="scrollToSection('Contacto'); toggleMenu()">Contacto</button>
+
+    <div class="redes">
+      <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img src="img/social.svg" alt=""></a>
+      <a href="https://www.instagram.com/r5nododeportivo/" target="_blank"><img src="img/social (1).svg" alt=""></a>
+    </div>
   </div>
 </div>

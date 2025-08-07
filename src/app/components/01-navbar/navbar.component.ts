@@ -16,4 +16,9 @@ export class NavbarComponent implements OnInit {
   scrollToSection(id: string): void {
     this.viewportScroller.scrollToAnchor(id);
   }
+  menuAbierto = false;
+
+  toggleMenu() {
+    this.menuAbierto = !this.menuAbierto;
+  }
 }

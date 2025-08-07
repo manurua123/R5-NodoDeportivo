@@ -2,7 +2,7 @@
     width: 100vw;
     height: 100vh;
     position: relative;
-    margin-top: 5vh;
+    padding-top: 5vh;
     padding-top: 5vh;
 }
 
@@ -31,6 +31,7 @@
     border-top-right-radius: 80px 80px;
     border-bottom-right-radius: 80px 80px;
     margin-top: 10vh;
+    text-transform: uppercase;
 }
 
 .textos {
@@ -80,8 +81,6 @@
     position: absolute;
     left: 14%;
     bottom: 10%;
-
-
 }
 
 .colum a:hover {
@@ -164,16 +163,18 @@ input:focus {
 .form.enviado {
     justify-content: center;
 }
-.form button:hover{
-    color:#c8f81a ;
+
+.form button:hover {
+    color: #c8f81a;
 }
+
 .form button.enviado {
     background-color: black;
     color: white;
     flex-grow: 1;
-   
+
     border-radius: 60vw;
-  
+
 }
 
 .form input.enviado {
@@ -183,4 +184,99 @@ input:focus {
     opacity: 0;
     pointer-events: none;
     flex-grow: 0;
+}
+
+@media only screen and (max-width: 900px) {
+
+
+
+    .conteiner {
+        width: 100vw;
+        height: auto;
+        position: relative;
+        padding-top: 0vh;
+        padding-top: 0vh;
+        margin-top: 0px;
+        background-color: white;
+        padding-bottom: 15vw;
+    }
+
+    .titulo {
+        width: 100%;
+        padding: 2em 0;
+        background-color: #c8f81a;
+        color: black;
+        text-align: center;
+        text-transform: capitalize;
+        border-radius: 0;
+        margin: 0px;
+          
+    }
+
+    .imgFondo,
+    .trabaja,
+    .textos {
+        display: none;
+    }
+
+
+    .tarjeta {
+        position: relative;
+        z-index: 2;
+        border-radius: 2vw;
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10vw;
+    }
+
+
+
+    .colum {
+        background-color: white;
+        width: 90%;
+        height: auto;
+        margin: 4vw auto;
+        color: black;
+        padding: 10vw;
+        border-radius: 10vw;
+        border: 1px solid black;
+
+    }
+
+    .colum h3 {
+        font-size: 5vw;
+        display: inline-block;
+        line-height: normal;
+        border-radius: 0px;
+        margin-bottom: 6vw;
+        padding: 0px;
+        position: relative;
+        left: 0;
+        top: 0;
+
+    }
+
+    .colum p {
+        position: relative;
+        left: 0%;
+        top: 0%;
+    }
+.colum a {
+    color: #6808C4;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    left: 0%;
+    bottom: 0%;
+}
+
+
+
+
+
 }

@@ -18,15 +18,59 @@
 .logo img {
     width: 100%
 }
-.boton{
-    margin-top: 4vw ;
-    
+
+.boton {
+    margin-top: 4vw;
+
 }
-.boton button{
+
+.boton button {
     background-color: #c8f81a;
     color: black;
     border: none;
     padding: 0.8vw 2vw;
     border-radius: 0.5vw;
-  
+
+}
+
+
+
+@media only screen and (max-width: 900px) {
+
+
+
+    .conteiner {
+        width: 100vw;
+        height: 100vh;
+        background-image: url('/img/fondoMobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 6vw;
+    }
+
+    .logo {
+        width: 60vw;
+    }
+
+    .logo img {
+        width: 100%
+    }
+
+    .boton {
+        margin-top:40vw;
+    }
+
+    .boton button {
+        background-color: #c8f81a;
+        color: black;
+        border: none;
+        padding: 2vw 5vw;
+        border-radius: 4vw;
+        font-size: 7vw;
+
+    }
 }

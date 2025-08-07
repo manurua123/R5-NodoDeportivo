@@ -1,40 +1,120 @@
-.conteiner{
+.conteiner {
     width: 100%;
     display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-top: 10vh;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10vh;
 }
+
 .titulo {
     width: 100%;
     background-color: #c8f81a;
     color: black;
     text-transform: uppercase;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 3vw;
     padding-left: 8vw;
     border-top-right-radius: 80px 80px;
     border-bottom-right-radius: 80px 80px;
     margin-top: 10vh;
 }
-h2{
+
+h3 {
+    display: none;
+}
+
+h2 {
     margin: 0;
 }
-.textos{
+
+.textos {
     padding-left: 8vw;
     padding-top: 5vw;
     width: 35vw;
 }
-.contenido{
+
+.contenido {
     width: 47vw;
 
 }
-.mapa{
+
+.mapa {
     width: 46vw;
 }
-.mapa img{
+
+.mapa img {
     width: 100%;
 }
+span{
+    font-weight: 600;
+}
 
+@media only screen and (max-width: 900px) {
+    .conteiner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 5vh;
+    }
+
+    .titulo {
+
+        width: 100%;
+        background-color: transparent;
+        color: #c8f81a;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding: 0px;
+        margin: 0px;
+      border-radius: 0px;
+        width: 80%;
+            margin: auto;
+           
+    }
+
+
+
+    h2 {
+        display: none;
+    }
+
+    h3 {
+        margin: auto;
+        display: inline-block;
+        color: #c8f81a;
+        font-size: 4vw;
+        text-align: left;
+        margin: 0px;
+     
+        
+    }
+
+    .textos {
+        
+        padding: 0px;
+        width: 80%;
+        margin: auto;
+                margin-top: 2vw;
+    }
+
+    .contenido {
+        width: 100%;
+
+    }
+
+    .mapa {
+        width: 80%;
+        height: 20vh;
+        margin: auto;
+    }
+
+    .mapa img {
+        width: 100%;
+    }
+}
