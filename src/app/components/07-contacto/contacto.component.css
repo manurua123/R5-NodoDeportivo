@@ -5,19 +5,21 @@
     margin-top: 10vh;
     height: 70vh;
 }
-.textos p{
+
+.textos p {
     margin-top: 5vh;
 }
+
 .form {
     margin-top: 5vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 68vw;
+    width: 72vw;
 }
 
 .form .item {
-    width: 32vw;
+    width: 30vw;
 }
 
 .form .item input {
@@ -31,70 +33,122 @@
     color: white;
     padding-left: 1vw;
 }
-.form .item input:focus{
+
+.form .item input:focus {
     outline: none;
 }
-.form .item p{
+
+.form .item p {
     font-weight: 500;
     margin-top: 0.1vw;
     font-size: 0.8vw;
-    
+    margin-bottom: 0px;
+
+}
+.enviado{
+    opacity: 0;
+}
+.form button {
+    background-color: #c8f81a;
+    color: black;
+    border: none;
+    padding: 00 3vw;
+    border-radius: 0.5vw;
+    height: 2vw;
+    z-index: 2;
+}
+.form button:disabled{
+    opacity: 0;
+}
+.form button:hover {
+    font-weight: 600;
+    border: none;
+    padding: 00 3vw;
+    border-radius: 0.5vw;
+    height: 2vw;
 }
 
-.redes{
+
+.envioExitoso {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    width: 63vw;
+    height: 10vw;
+    top: 5vw;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.redes {
     margin-top: 10vh;
     width: 45vw;
     display: flex;
     justify-content: space-between;
 }
-.elem{
+
+.elem {
     display: flex;
     flex-direction: column;
 }
-.elem p{
+
+.elem p {
     color: #c8f81a;
     font-weight: 500;
 }
-.elem a{
-  text-decoration: none;
-  color: white;
-  margin-bottom: 1vw;
-}
-.elem a img {
- margin-right: 0.5vw;
+
+.elem a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 1vw;
 }
 
-.imagenes{
+.elem a img {
+    margin-right: 0.5vw;
+}
+
+.imagenes {
     position: absolute;
     right: 0;
     bottom: 0;
     width: 36vw;
-    height:36vw ;
-   
-    
+    height: 36vw;
+
+
 }
-.imagenes2{
-        margin-top: 2vw;
+
+.imagenes2 {
+    margin-top: 2vw;
     width: 36vw;
     height: 36vw;
     position: relative;
     top: 0;
 }
-.ciculo{
+
+.ciculo {
     position: absolute;
     bottom: -10vh;
+    opacity: 0.8;
     left: 8vw;
-    rotate:19deg;
+    rotate: 4deg;
     width: 75%;
 }
-.logo{
+
+.logo {
     bottom: 25%;
-        right: 10%;
+    right: 10%;
     position: absolute;
     width: 30%;
-    
+
 }
-.imagenes2 img{
+
+.imagenes2 img {
     width: 100%;
+}
+
+small {
+    margin-top: 0px;
 }
 

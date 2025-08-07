@@ -38,19 +38,19 @@
 
 
 #deporte1 {
-    background-image: url('/img/deportes-padel.png');
+    background-image: url('/img/deportes-padel-min.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #deporte2 {
-    background-image: url('/img/deporte-futbol.png');
+    background-image: url('/img/deporte-futbol-min.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #deporte3 {
-    background-image: url('/img/deporte-musculacion.png');
+    background-image: url('/img/deporte-musculacion-min.png');
     background-repeat: no-repeat;
     background-size: cover;
 }

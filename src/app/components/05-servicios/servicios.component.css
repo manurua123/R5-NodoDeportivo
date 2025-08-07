@@ -80,11 +80,12 @@
     position: absolute;
     left: 14%;
     bottom: 10%;
-    
+
 
 }
-.colum a:hover{
-   opacity: 0.9;
+
+.colum a:hover {
+    opacity: 0.9;
 }
 
 .colum a img {
@@ -123,23 +124,26 @@
     height: 3vw;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: white;
     border-radius: 60vw;
+    overflow: hidden;
+    transition: all 0.6s ease;
 }
 
 .form input {
     background-color: transparent;
     border: none;
     padding-left: 2vw;
-
+    transition: all 0.6s ease;
+    flex-grow: 1;
+    opacity: 1;
 }
 
-
 input:focus {
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
     outline: none;
+    box-shadow: none;
+    border: none;
 }
 
 .form button {
@@ -148,7 +152,35 @@ input:focus {
     color: white;
     border-radius: 50vw;
     height: 2.5vw;
-    margin-top: 0.25vw;
-    margin-right: 0.25vw;
+    margin: 0.25vw;
     padding: 0 1.5vw;
+    transition: all 0.6s ease;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* Estado ENVIADO animado */
+
+.form.enviado {
+    justify-content: center;
+}
+.form button:hover{
+    color:#c8f81a ;
+}
+.form button.enviado {
+    background-color: black;
+    color: white;
+    flex-grow: 1;
+   
+    border-radius: 60vw;
+  
+}
+
+.form input.enviado {
+    width: 0;
+    padding-left: 0;
+    margin: 0;
+    opacity: 0;
+    pointer-events: none;
+    flex-grow: 0;
 }

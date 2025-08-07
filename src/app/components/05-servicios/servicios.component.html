@@ -15,27 +15,33 @@
       <h3>Fisioterapia</h3>
       <p>Prevení y tratá lesiones.
         Cuidá tu cuerpo con profesionales</p>
-      <a href="">Solicitá un turno <img src="img/icon.svg" alt=""></a>
+      <a href="https://wa.me/5492215055082?text=Hola,%20quisiera%20reservar%20un%20turno%20para%20Fisioterapia "
+        target="_blank">Solicitá un turno <img src="img/icon.svg" alt=""></a>
     </div>
     <div class="colum barberia">
       <h3>Barbería</h3>
       <p>Cortes y arreglos con estilo.</p>
 
-      <a href="">Reservá ahora <img src="img/icon.svg" alt=""></a>
+      <a href="https://wa.me/5492215055082?text=Hola,%20quisiera%20reservar%20un%20turno%20para%20Barbería"
+        target="_blank">Reservá ahora <img src="img/icon.svg" alt=""></a>
     </div>
     <div class="colum">
       <h3>Pestañas y uñas</h3>
       <p>Servicio estético para sentirte bien de pies a cabeza.</p>
-      <a href="">Agendá tu cita <img src="img/icon.svg" alt=""></a>
+      <a href="https://wa.me/5492215055082?text=Hola,%20quisiera%20reservar%20un%20turno%20para%20Pestañas%20y%20uñas"
+        target="_blank">Agendá tu cita <img src="img/icon.svg" alt=""></a>
     </div>
   </div>
   <div class="trabaja">
     <p>¿Te gustaría trabajar con nosotros? <br>
       Ingresá tu email y te enviamos el formulario.</p>
     <h4>Vamos! —</h4>
-    <div class="form">
-      <input type="email" placeholder="Ingresa tu email">
-      <button>Quiero formar parte</button>
+    <div class="form" [ngClass]="{ 'enviado': form }">
+      <input type="email" placeholder="Ingresa tu email" [ngClass]="{ 'enviado': form }">
+      <button (click)="enviarForm()" [ngClass]="{ 'enviado': form }">
+        <p *ngIf="!form">Quiero formar parte</p>
+        <p *ngIf="form">¡Gracias por formar parte!</p>
+      </button>
     </div>
   </div>
 </div>

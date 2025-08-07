@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServiciosComponent implements OnInit {
 
+  form = false
   constructor() { }
 
   ngOnInit() {
   }
 
+  enviarForm(){
+    this.form = true
+  }
 }

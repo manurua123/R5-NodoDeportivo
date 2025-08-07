@@ -3,8 +3,56 @@
     <p>¿Te gustaría trabajar con nosotros? <br>
       Ingresá tu email y te enviamos el formulario.</p>
     <h4>Vamos! —</h4>
-    <div class="form">
-      <input type="email" placeholder="Ingresa tu email">
-      <button>Quiero formar parte</button>
+      <div class="form" [ngClass]="{ 'enviado': form }">
+        <input type="email" placeholder="Ingresa tu email" [ngClass]="{ 'enviado': form }">
+        <button (click)="enviarForm()" [ngClass]="{ 'enviado': form }">
+          <p *ngIf="!form">Quiero formar parte</p>
+          <p *ngIf="form">¡Gracias por formar parte!</p>
+        </button>
+      </div>
+  </div>
+  <div class="footer">
+    <div class="colum1">
+      <img src="img/Logo.svg" alt="">
+      <h3>R5 | Nodo Deportivo</h3>
+      <p>Somos un punto de encuentro en Villa Elvira donde el movimiento, la comunidad y el bienestar confluyen en un
+        nodo
+        deportivo que combina infraestructura de alto nivel y servicios integrales para brindarte lo mejor.</p>
     </div>
+    <div class="menus">
+      <div class="menu1">
+        <h4>Deportes</h4>
+        <p>Padel</p>
+        <p>Fútbol</p>
+        <p>Gimnacio</p>
+      </div>
+      <div class="menu1">
+        <h4>Espacios</h4>
+        <p>Coworking</p>
+        <p>Sala de reuniones</p>
+        <p>Área recreativa</p>
+      </div>
+      <div class="menu1">
+        <h4>Servicios</h4>
+        <p>Fisioterapia</p>
+        <p>Barberia</p>
+        <p>Pestañas y uñas</p>
+      </div>
+      <div class="menu2">
+        <h4>Contactanos</h4>
+        <div class="ubicacion">
+          <img src="img/ubicacion.svg" alt="">
+          <a href="https://www.google.com/maps?ll=-34.949041,-57.914852&z=18&t=m&hl=es-419&gl=AR&mapclient=embed&cid=5815342654659408242" target="_blank"> Av. 90 y C. 12 - Villa Elvira <br>
+            La Plata - Buenos Aires </a>
+        </div>
+
+        <a href="mailto:info@r5.com.ar"  target="_blank"><img src="img/mail.svg" alt="">info&#64;r5.com.ar</a>
+        <div class="sociales">
+          <h4>Seguinos</h4>
+          <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img src="img/social.svg" alt=""></a>
+          <a href="https://www.instagram.com/r5nododeportivo/" target="_blank" ><img src="img/social (1).svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
