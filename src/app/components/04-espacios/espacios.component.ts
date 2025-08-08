@@ -11,8 +11,8 @@ export class EspaciosComponent implements OnInit {
     '/img/galeria/img1.png',
     '/img/galeria/img2.png',
      '/img/galeria/img3.png',
-      '/img/galeria/img4.png'
-  
+
+
   ];
   imagenActual: string = '';
 

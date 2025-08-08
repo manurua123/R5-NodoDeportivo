@@ -155,9 +155,18 @@
 small {
   margin-top: 0px;
 }
+.mobile{
+  display: none;
+}
 
 @media only screen and (max-width: 900px) {
 
+  .desktop{
+    display: none;
+  }
+    .mobile {
+      display: block;
+    }
   .imagenes,
   .envioExitoso,
   .form {

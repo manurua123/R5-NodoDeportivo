@@ -190,10 +190,11 @@ input:focus {
     background-color: transparent;
     border: none;
     margin-top: 2vh;
+    color: black;
   }
 
   a {
-    color: black;
+    color: black !important;
     margin-top: 2vh;
   }
 

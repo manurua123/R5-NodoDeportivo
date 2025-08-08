@@ -117,4 +117,8 @@ span{
     .mapa img {
         width: 100%;
     }
+
+    .nova{
+      display: none;
+    }
 }
