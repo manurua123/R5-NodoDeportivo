@@ -75,7 +75,7 @@ span{
       border-radius: 0px;
         width: 80%;
             margin: auto;
-           
+
     }
 
 
@@ -91,12 +91,12 @@ span{
         font-size: 4vw;
         text-align: left;
         margin: 0px;
-     
-        
+
+
     }
 
     .textos {
-        
+
         padding: 0px;
         width: 80%;
         margin: auto;
@@ -110,7 +110,7 @@ span{
 
     .mapa {
         width: 80%;
-        height: 20vh;
+        height: 40vh;
         margin: auto;
     }
 

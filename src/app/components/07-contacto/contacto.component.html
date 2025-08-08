@@ -23,8 +23,8 @@
         </div>
 
         <button  [ngClass]="{ 'enviado': enviExitoso }" type="submit" ngClass="" [disabled]="miFormulario.invalid " (click)="enviarFormulario()">Enviar</button>
-    
-        
+
+
     </form>
     <div class="envioExitoso" *ngIf="enviExitoso">
         <p>Gracias por contactarte.</p>
@@ -62,3 +62,5 @@
         </div>
     </div>
 </div>
+
+

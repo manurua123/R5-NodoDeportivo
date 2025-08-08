@@ -27,6 +27,22 @@
 
 }
 
+a{
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+a:hover{
+  color: #c8f81a;
+}
+a:hover img{
+  filter: none;
+}
+a img{
+  filter:brightness(100);
+  margin-right: 1vw;
+}
 .textoPrincipal {
     position: absolute;
     left: 60vw;
@@ -123,7 +139,10 @@
     gap: 1rem;
     z-index: 10;
 }
-
+a img {
+  filter: none;
+  margin-right: 1vw;
+}
 .linea {
     height: 10vw;
     width: 2px;

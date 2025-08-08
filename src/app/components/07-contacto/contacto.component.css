@@ -1,154 +1,216 @@
 .conteiner {
-    width: 100%;
-    padding: 0 8vw;
-    position: relative;
-    margin-top: 10vh;
-    height: 70vh;
+  width: 100%;
+  padding: 0 8vw;
+  position: relative;
+  margin-top: 10vh;
+  height: 70vh;
 }
 
 .textos p {
-    margin-top: 5vh;
+  margin-top: 5vh;
 }
 
 .form {
-    margin-top: 5vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 72vw;
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 72vw;
 }
 
 .form .item {
-    width: 30vw;
+  width: 30vw;
 }
 
 .form .item input {
-    width: 100%;
-    background-color: transparent;
-    border: 1px solid #c8f81a;
-    border-radius: 0.2vw;
-    display: flex;
-    align-content: center;
-    height: 2vw;
-    color: white;
-    padding-left: 1vw;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #c8f81a;
+  border-radius: 0.2vw;
+  display: flex;
+  align-content: center;
+  height: 2vw;
+  color: white;
+  padding-left: 1vw;
 }
 
 .form .item input:focus {
-    outline: none;
+  outline: none;
 }
 
 .form .item p {
-    font-weight: 500;
-    margin-top: 0.1vw;
-    font-size: 0.8vw;
-    margin-bottom: 0px;
+  font-weight: 500;
+  margin-top: 0.1vw;
+  font-size: 0.8vw;
+  margin-bottom: 0px;
 
 }
-.enviado{
-    opacity: 0;
+
+.enviado {
+  opacity: 0;
 }
+
 .form button {
-    background-color: #c8f81a;
-    color: black;
-    border: none;
-    padding: 00 3vw;
-    border-radius: 0.5vw;
-    height: 2vw;
-    z-index: 2;
+  background-color: #c8f81a;
+  color: black;
+  border: none;
+  padding: 00 3vw;
+  border-radius: 0.5vw;
+  height: 2vw;
+  z-index: 2;
 }
-.form button:disabled{
-    opacity: 0;
+
+.form button:disabled {
+  opacity: 0;
 }
+
 .form button:hover {
-    font-weight: 600;
-    border: none;
-    padding: 00 3vw;
-    border-radius: 0.5vw;
-    height: 2vw;
+  font-weight: 600;
+  border: none;
+  padding: 00 3vw;
+  border-radius: 0.5vw;
+  height: 2vw;
 }
 
 
 .envioExitoso {
-    background-color: rgba(0, 0, 0, 0.8);
-    position: absolute;
-    width: 63vw;
-    height: 10vw;
-    top: 5vw;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  width: 63vw;
+  height: 10vw;
+  top: 5vw;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
 .redes {
-    margin-top: 10vh;
-    width: 45vw;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 10vh;
+  width: 45vw;
+  display: flex;
+  justify-content: space-between;
 }
 
 .elem {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .elem p {
-    color: #c8f81a;
-    font-weight: 500;
+  color: #c8f81a;
+  font-weight: 500;
 }
 
 .elem a {
-    text-decoration: none;
-    color: white;
-    margin-bottom: 1vw;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 1vw;
 }
 
 .elem a img {
-    margin-right: 0.5vw;
+  margin-right: 0.5vw;
 }
 
 .imagenes {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 36vw;
-    height: 36vw;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 36vw;
+  height: 36vw;
 
 
 }
 
 .imagenes2 {
-    margin-top: 2vw;
-    width: 36vw;
-    height: 36vw;
-    position: relative;
-    top: 0;
+  margin-top: 2vw;
+  width: 36vw;
+  height: 36vw;
+  position: relative;
+  top: 0;
 }
 
 .ciculo {
-    position: absolute;
-    bottom: -10vh;
-    opacity: 0.8;
-    left: 8vw;
-    rotate: 4deg;
-    width: 75%;
+  position: absolute;
+  bottom: -10vh;
+  opacity: 0.8;
+  left: 8vw;
+  rotate: 4deg;
+  width: 75%;
 }
 
 .logo {
-    bottom: 25%;
-    right: 10%;
-    position: absolute;
-    width: 30%;
+  bottom: 25%;
+  right: 10%;
+  position: absolute;
+  width: 30%;
 
 }
 
 .imagenes2 img {
-    width: 100%;
+  width: 100%;
 }
 
 small {
-    margin-top: 0px;
+  margin-top: 0px;
 }
 
+@media only screen and (max-width: 900px) {
+
+  .imagenes,
+  .envioExitoso,
+  .form {
+    display: none;
+  }
+.conteiner{
+  height: auto;
+  padding-bottom: 10vh;
+}
+  .textos p {
+    display: none
+  }
+
+    h1{
+      color: #c8f81a;
+      text-align: center;
+      font-size: 6vw;
+    }
+
+  .redes {
+    margin-top: 1vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+  .elem {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .elem p {
+    color: #c8f81a;
+    font-weight: 500;
+    margin-bottom: 2vh;
+    margin-top: 3vh;
+    text-align: center;
+
+  }
+
+  .elem a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 1vw;
+    text-align: center;
+
+  }
+
+  .elem a img {
+    margin-right: 3vw;
+  }
+}
