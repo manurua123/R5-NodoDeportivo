@@ -56,19 +56,19 @@ a:hover img{
 
 
 #deporte1 {
-    background-image: url('/img/deportes-padel-min.png');
+      background-image: url('/img/deporte-musculacion-min.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #deporte2 {
-    background-image: url('/img/deporte-futbol-min.png');
-    background-repeat: no-repeat;
+
+    background-image: url('/img/deportes-padel-min.png');    background-repeat: no-repeat;
     background-size: cover;
 }
 
 #deporte3 {
-    background-image: url('/img/deporte-musculacion-min.png');
+      background-image: url('/img/deporte-futbol-min.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -76,12 +76,19 @@ a:hover img{
 .black {
     position: absolute;
     left: 0;
-
     width: 100vw;
     height: 100%;
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 30%, rgba(237, 221, 83, 0) 100%);
 }
 
+
+.botones{
+  margin-top: 2vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
 /* Estilo contenedor general */
 .scroll-container {
     scroll-snap-type: y mandatory;
@@ -89,9 +96,8 @@ a:hover img{
     height: 100vh;
 }
 
-a{
-  font-size: 1.4vw;
-}
+
+
 
 /* Cada sección ocupa la pantalla completa */
 .seccion {
@@ -147,7 +153,16 @@ a{
 }
 a img {
   filter: none;
-  margin-right: 1vw;
+  margin-right: 0.5vw;
+}
+h4{
+  font-size: 1.3vw;
+}
+.botonDiferente{
+  background-color: none;
+  border: 1px solid white;
+  padding: 0.1vw 1vw;
+  border-radius: 20vw;
 }
 .linea {
     height: 10vw;
@@ -173,6 +188,7 @@ a img {
     opacity: 1;
 
 }
+
 
 .mobile {
     display: none;

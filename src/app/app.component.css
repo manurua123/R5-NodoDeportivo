@@ -242,6 +242,13 @@ img {
   z-index: -1;
 }
 
+.bajar {
+  text-align: center;
+padding-top: 5vw;
+position: relative;
+z-index: 199;
+}
+
 
 @media only screen and (max-width: 900px) {
 

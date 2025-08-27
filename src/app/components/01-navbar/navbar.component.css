@@ -2,16 +2,19 @@
     width: 82vw;
     left: 9vw;
     top: 4vw;
+    padding: 0.5vw 2vw;
     position: fixed;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    z-index: 9999999;
+    z-index: 100;
+    background-color: black;
+    border-radius: 10vw;
 }
 
 .logo {
-    width: 2vw;
+    width: 15vw;
 }
 
 .logo img {
@@ -60,7 +63,7 @@
             align-items: center;
     }
 
-  
+
         /* Contenedor del menú hamburguesa */
         .hamburguesa {
             cursor: pointer;
@@ -71,7 +74,7 @@
             justify-content: space-between;
             margin-left: auto;
         }
-    
+
         .hamburguesa div {
             height: 4px;
             background-color: white;
@@ -79,20 +82,20 @@
             transition: 0.4s;
             z-index: 3;
         }
-    
+
         /* Animación de las barras */
         .bar1.active {
             transform: rotate(45deg) translate(5px, 5px);
         }
-    
+
         .bar2.active {
             opacity: 0;
         }
-    
+
         .bar3.active {
             transform: rotate(-45deg) translate(6px, -6px);
         }
-    
+
         /* Menú deslizante desde la derecha */
         .menu-desplegable {
             position: fixed;
@@ -110,11 +113,11 @@
             transition: right 0.4s ease-in-out;
             z-index: 2;
         }
-    
+
         .menu-desplegable.abierto {
             right: 0;
         }
-    
+
         .menu-desplegable button {
             background: none;
             border: none;
@@ -127,12 +130,12 @@
         }
         .redes{
             margin-top: 10vh;
-        
+
             width: 70%;
             text-align: center;
         }
         .redes a{
             margin: 0 2vw;
         }
-      
+
 }

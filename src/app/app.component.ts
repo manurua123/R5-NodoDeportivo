@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 
@@ -12,13 +13,18 @@ export class AppComponent {
   idioma: string = 'esp';
   isDropdownOpen: boolean = true;
 
-  constructor(){}
 
 
 
   ngOnInit() {
 
   }
+
+    constructor(private viewportScroller: ViewportScroller) {}
+
+    scrollToSection(id: string): void {
+      this.viewportScroller.scrollToAnchor(id);
+    }
 
 }
 

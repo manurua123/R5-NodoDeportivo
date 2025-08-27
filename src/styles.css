@@ -37,7 +37,45 @@ h2 {
   scrollbar-width: thin;
 }
 
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
 
+#preloader img {
+  width: 10vw;
+  height: auto;
+  animation-name: lata;
+    /* Nombre de la animación */
+    animation-duration: 1s;
+    /* Un segundo por ciclo */
+    animation-iteration-count: infinite;
+    /* Se repite infinitamente */
+    animation-direction: alternate;
+    /* La animación va y vuelve */
+}
+
+
+
+
+ @keyframes lata {
+   0% {
+     transform: scale(1);
+   }
+
+   100% {
+     transform: scale(1.05);
+     /* Se agranda un 5% */
+   }
+ }
 
 @media only screen and (max-width: 900px) {
 

@@ -1,9 +1,8 @@
 .conteiner {
     width: 100vw;
-    height: 100vh;
     position: relative;
     padding-top: 5vh;
-    padding-top: 5vh;
+
 }
 
 .imgFondo {
@@ -47,9 +46,9 @@
     z-index: 2;
     background-color: white;
     border-radius: 2vw;
-    width: 85vw;
-    height: 22vw;
-    margin: 5vh 7vw 10vh 7vw;
+    width: 50vw;
+    height: 15vw;
+    margin: 5vh 25vw 10vh 25vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -57,10 +56,10 @@
 }
 
 .colum {
-    width: 28%;
+    width: 45%;
     position: relative;
-    padding: 5vw;
-    height: 14vw;
+    padding: 6vw 0;
+    height: 10vw;
 }
 
 .colum h3 {
@@ -93,9 +92,8 @@
     margin-left: 0.5vw;
 }
 
-.barberia {
-    border-left: 2px solid black;
-    border-right: 2px solid black
+.colum1 {
+    border-right: 1px solid black
 }
 
 .trabaja {

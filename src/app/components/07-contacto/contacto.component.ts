@@ -19,7 +19,7 @@ enviExitoso = false
   enviarFormulario() {
     this.enviExitoso = true
       console.log('Datos del formulario:', this.miFormulario.value);
-   
+
   }
 
 }
