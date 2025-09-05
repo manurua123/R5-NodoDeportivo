@@ -1,0 +1,130 @@
+<div class="conteiner desktop">
+  <div class="textos">
+    <h1>Estemos en contacto</h1>
+    <p>
+      Enterate de todas las novedades y futuros eventos dejando tu email.
+    </p>
+  </div>
+  <form [formGroup]="miFormulario" (ngSubmit)="enviarFormulario()" class="form">
+    <div class="item">
+      <input type="text" formControlName="nombre" />
+      <p>NOMBRE</p>
+      <div *ngIf="
+          miFormulario.get('nombre')?.invalid &&
+          miFormulario.get('nombre')?.touched
+        ">
+        <small style="color: #db4025">Este campo es obligatorio</small>
+      </div>
+    </div>
+
+    <div class="item">
+      <input type="email" formControlName="email" />
+      <p>EMAIL</p>
+      <div *ngIf="
+          miFormulario.get('email')?.invalid &&
+          miFormulario.get('email')?.touched
+        ">
+        <small style="color: #db4025" *ngIf="miFormulario.get('email')?.errors?.['required']">El email es
+          obligatorio</small>
+        <small style="color: #db4025" *ngIf="miFormulario.get('email')?.errors?.['email']">Formato inválido</small>
+      </div>
+    </div>
+
+    <button type="submit" ngClass="" [disabled]="miFormulario.invalid" (click)="enviarFormulario()">
+      Enviar
+    </button>
+  </form>
+  <div class="envioExitoso" *ngIf="enviExitoso">
+    <p>Gracias por contactarte.</p>
+  </div>
+
+  <div class="redes">
+    <div class="elem">
+      <p>Envianos un Whatsapp</p>
+      <a href="https://wa.me/5492215055082" target="_blank">+54 9 221 505 - 5082</a>
+    </div>
+
+    <div class="elem">
+      <p>Seguinos en las redes</p>
+      <a href="https://www.instagram.com/r5nododeportivo/" target="_blank"><img src="img/insta.svg"
+          alt="" />&#64;r5nododeportivo</a>
+      <a href="https://www.facebook.com/profile.php?id=61578976422734" target="_blank"><img src="img/facebook.svg"
+          target="_blank" alt="" />R5 Nodo
+        Deportivo</a>
+      <a href="https://youtube.com/@r5nododeportivo?feature=shared" target="_blank"><img src="img/YouTube.svg"
+          target="_blank" alt="" />Visitá nuestro canal</a>
+    </div>
+  </div>
+  <div class="imagenes">
+    <div class="imagenes2">
+      <div class="ciculo">
+        <img src="img/circuloContacto.svg" alt="" />
+      </div>
+      <div class="logo">
+        <img src="img/Logo.svg" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="conteiner mobile">
+  <div class="textos">
+    <h1>Estemos en contacto</h1>
+    <p>
+      Enterate de todas las novedades y futuros eventos dejando tu email.
+    </p>
+  </div>
+  <form [formGroup]="miFormulario" (ngSubmit)="enviarFormulario()" class="form">
+    <div class="item">
+      <input type="text" formControlName="nombre" />
+      <p>NOMBRE</p>
+      <div *ngIf="
+          miFormulario.get('nombre')?.invalid &&
+          miFormulario.get('nombre')?.touched
+        ">
+        <small style="color: #db4025">Este campo es obligatorio</small>
+      </div>
+    </div>
+
+    <div class="item">
+      <input type="email" formControlName="email" />
+      <p>EMAIL</p>
+      <div *ngIf="
+          miFormulario.get('email')?.invalid &&
+          miFormulario.get('email')?.touched
+        ">
+        <small style="color: #db4025" *ngIf="miFormulario.get('email')?.errors?.['required']">El email es
+          obligatorio</small>
+        <small style="color: #db4025" *ngIf="miFormulario.get('email')?.errors?.['email']">Formato inválido</small>
+      </div>
+    </div>
+
+    <button [ngClass]="{ enviado: enviExitoso }" type="submit" ngClass="" [disabled]="miFormulario.invalid"
+      (click)="enviarFormulario()">
+      Enviar
+    </button>
+  </form>
+  <div class="envioExitoso" *ngIf="enviExitoso">
+    <p>Gracias por contactarte.</p>
+  </div>
+
+  <div class="redes">
+    <div class="elem">
+      <p>Envianos un Whatsapp</p>
+      <a href="https://wa.me/5492215055082" target="_blank">+54 9 221 505 - 5082</a>
+    </div>
+
+
+    <div class="elem">
+
+      <p>Seguinos en las redes</p>
+      <a href="https://www.instagram.com/r5nododeportivo/" target="_blank"><img src="img/insta.svg"
+          alt="" />&#64;r5nododeportivo</a>
+      <a href="https://www.facebook.com/profile.php?id=61578976422734" target="_blank"><img src="img/facebook.svg"
+          target="_blank" alt="" />R5 Nodo
+        Deportivo</a>
+      <a href="https://youtube.com/@r5nododeportivo?feature=shared" target="_blank"><img src="img/YouTube.svg"
+          target="_blank" alt="" />Visitá nuestro canal</a>
+    </div>
+  </div>
+</div>

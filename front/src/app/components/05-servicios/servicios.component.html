@@ -1,0 +1,41 @@
+<div class="conteiner">
+  <div class="imgFondo">
+    <img src="img/servicios_background.svg" alt="">
+  </div>
+  <div class="titulo">
+    <h2>Servicios</h2>
+  </div>
+  <div class="textos">
+    <p>Somos un nodo dedicado al <span>rendimiento</span> y <span>bienestar</span>.</p>
+    <p>Entre entrenamientos o después de un partido, viví la experiencia completa en R5 disfrutando de estos servicios.
+    </p>
+  </div>
+  <div class="tarjeta">
+    <div class="colum colum1">
+      <h3>Nutrición</h3>
+      <p>Mejorá tu alimentación.</p>
+      <a href="https://wa.me/5492215055082?text=Hola,%20quisiera%20reservar%20un%20turno%20para%20Nutricion "
+        target="_blank">Solicitá un turno <img src="img/Icon (2).svg" alt=""></a>
+    </div>
+
+    <div class="colum">
+      <h3>Salud Mental</h3>
+      <p>Cuidá tu mente.</p>
+      <a href="https://wa.me/5492215055082?text=Hola,%20quisiera%20reservar%20un%20turno%20para%20Salud%20Mental"
+        target="_blank">Agendá tu cita <img src="img/Icon (2).svg" alt=""></a>
+    </div>
+  </div>
+  <div class="trabaja">
+    <p>Te gustaría trabajar en R5 <br>
+      Ingresá tu email y te enviamos el formulario.</p>
+    <h4>Vamos! —</h4>
+    <div class="form" [ngClass]="{ 'enviado': form }">
+      <input type="email" placeholder="Ingresa tu email" [ngClass]="{ 'enviado': form }" [(ngModel)]="email">
+      <button (click)="enviarForm()" [ngClass]="{ 'enviado': form }">
+        <p *ngIf="!form">Quiero formar parte</p>
+        <p *ngIf="form">¡Gracias por formar parte!</p>
+      </button>
+    </div>
+  </div>
+</div>
+

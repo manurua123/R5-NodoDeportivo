@@ -1,0 +1,344 @@
+.conteiner {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.titulo {
+  width: 35vw;
+  background-color: #c8f81a;
+  position: absolute;
+  top: 13vw;
+  left: 0;
+  color: black;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 3vw;
+  padding-left: 8vw;
+  border-top-right-radius: 80px 80px;
+  border-bottom-right-radius: 80px 80px;
+  z-index: 2
+}
+
+.titulo h2 {
+  line-height: 0;
+
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+a img {
+  filter: brightness(100);
+  margin-right: 1vw;
+}
+
+a:hover {
+  color: #c8f81a;
+}
+
+a:hover img {
+  filter: none;
+}
+
+.textoPrincipal {
+  position: absolute;
+  left: 60vw;
+  top: 13vw;
+  width: 20vw;
+  z-index: 2
+}
+
+
+
+#deporte1 {
+  background-image: url('/img/GYM.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#deporte2 {
+
+  background-image: url('/img/deportes-padel-min.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#deporte3 {
+  background-image: url('/img/deporte-futbol-min.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.black {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 30%, rgba(237, 221, 83, 0) 100%);
+}
+
+
+.botones {
+  margin-top: 2vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Estilo contenedor general */
+.scroll-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+
+
+
+.seccion {
+  height: 100vh;
+  scroll-snap-align: start;
+  color: white;
+  padding: 0px 9vw;
+  position: relative;
+
+}
+
+.tituloSeccion {
+  position: absolute;
+  left: 8vw;
+  bottom: 7vw;
+}
+
+.tituloSeccion p {
+  line-height: 0;
+}
+
+.tituloSeccion h3 {
+  font-size: 5vw;
+  line-height: 5vw;
+}
+
+#deporte3 .tituloSeccion h3 {
+  font-size: 4vw;
+  line-height: 4vw;
+}
+
+.contenidoSeccion {
+  position: absolute;
+  left: 60vw;
+  bottom: 7vw;
+  width: 25vw;
+
+}
+
+
+
+/* Navegación con puntitos */
+.navegacion {
+  position: absolute;
+  right: 6vw;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  z-index: 10;
+}
+
+a img {
+  filter: none;
+  margin-right: 0.5vw;
+}
+
+h4 {
+  font-size: 1.3vw;
+}
+
+.botonDiferente {
+  background-color: none;
+  border: 1px solid white;
+  padding: 0.1vw 1vw;
+  border-radius: 20vw;
+}
+
+.linea {
+  height: 10vw;
+  width: 2px;
+  background-color: white;
+  opacity: 0.5;
+}
+
+.punto {
+  width: 0.6vw;
+  height: 0.6vw;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  opacity: 0.5;
+}
+
+.punto.active {
+  background: white;
+  width: 0.7vw;
+  height: 0.7vw;
+  opacity: 1;
+
+}
+
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+
+    display: block;
+    background-color: black;
+    height: auto;
+
+  }
+
+  .tituloM {
+    width: 100%;
+    padding: 1em 0;
+    background-color: #c8f81a;
+    color: black;
+    text-align: center;
+  }
+
+  .deportes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vw;
+    padding-bottom: 5vh;
+  }
+
+  .black {
+    display: none;
+  }
+
+
+  .dep {
+    width: 100%;
+    margin: 0;
+    color: white;
+    height: 40vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+
+
+  }
+
+
+
+  .tituloSeccionM {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    padding-top: 10vw;
+    text-align: center;
+  }
+
+  .contenidoSeccionM {
+    position: relative;
+    width: 80%;
+    margin: auto;
+
+  }
+
+  .botones {
+    position: relative;
+    width: 80%;
+    margin: auto;
+
+  }
+
+  .botones a {
+    font-size: 4vw;
+  }
+
+  a img {
+    filter: none;
+    width: 6vw;
+    margin-right: 2vw;
+  }
+
+
+  h4 {
+    font-size: 4vw;
+  }
+
+
+  #deporte1 {
+    text-align: right;
+        padding-bottom: 5vh;
+  }
+  #deporte2{
+      padding-bottom: 5vh;
+  }
+
+
+
+  #deporte2 .tituloSeccionM {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    padding-top: 5vh;
+    text-align: left;
+  }
+
+  #deporte2 .tituloSeccionM img {
+    width: 50%;
+  }
+
+  .botonDiferente {
+    background-color: none;
+    border: 1px solid white;
+    padding: 0.5vw 3vw;
+    border-radius: 20vw;
+    margin-bottom: 2vw;
+  }
+
+  #deporte3 .tituloSeccionM {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    padding-top: 5vw;
+    text-align: right;
+  }
+
+  #deporte3 .tituloSeccionM img {
+    width: 50%;
+  }
+
+  #deporte3 .contenidoSeccionM {
+    text-align: right;
+  }
+
+  #deporte3 h4 {
+    margin: 0px;
+  }
+}
