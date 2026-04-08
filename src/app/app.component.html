@@ -1,15 +1,43 @@
- <app-navbar></app-navbar>
-<app-hero id="Home"></app-hero>
-<app-deportes id="Deportes"></app-deportes>
+<header role="banner">
+  <app-navbar></app-navbar>
+</header>
+
+<main id="main-content">
+
+  <app-hero id="Home"></app-hero>
+
+  <section id="Deportes" aria-label="Sección de Deportes">
+    <app-deportes></app-deportes>
+  </section>
+
   <div class="bajar">
-    <img (click)="scrollToSection('Espacios')" src="img/Flecha.svg" alt="">
+    <button (click)="scrollToSection('Espacios')" aria-label="Bajar a la sección de Espacios" class="btn-invisible">
+      <img src="img/Flecha.svg" alt="flecha para cambiar seccion" aria-hidden="true">
+    </button>
   </div>
 
-<app-espacios id="Espacios"></app-espacios>
-<app-servicios id="Servicios"></app-servicios>
+  <section id="Espacios" aria-label="Nuestros Espacios">
+    <app-espacios></app-espacios>
+  </section>
+
+  <section id="Servicios" aria-label="Servicios Disponibles">
+    <app-servicios></app-servicios>
+  </section>
+
   <div class="bajar">
-    <img (click)="scrollToSection('Ubicacion')" src="img/Flecha.svg" alt="">
+    <button (click)="scrollToSection('Ubicacion')" aria-label="Bajar a la sección de Ubicación" class="btn-invisible">
+      <img src="img/Flecha.svg" alt="flecha para cambiar seccion" aria-hidden="true" >
+    </button>
   </div>
-<app-ubicacion  id="Ubicacion" ></app-ubicacion>
-<app-contacto id="Contacto" ></app-contacto>
-<app-footer id="Fotter"></app-footer>
+
+  <section id="Ubicacion" aria-label="Dónde estamos">
+    <app-ubicacion></app-ubicacion>
+  </section>
+
+  <section id="Contacto" aria-label="Formulario de Contacto">
+    <app-contacto></app-contacto>
+  </section>
+
+</main>
+
+<app-footer></app-footer>

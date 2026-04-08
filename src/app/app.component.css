@@ -249,6 +249,12 @@ position: relative;
 z-index: 199;
 }
 
+.bajar button{
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
 
 @media only screen and (max-width: 900px) {
 

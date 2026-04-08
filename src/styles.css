@@ -4,6 +4,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Kenyan Coffee';
   src: url('/fonts/Kenyan Coffee Bd.otf') format('opentype');
@@ -70,36 +71,36 @@ h2 {
   width: 10vw;
   height: auto;
   animation-name: lata;
-    /* Nombre de la animación */
-    animation-duration: 1s;
-    /* Un segundo por ciclo */
-    animation-iteration-count: infinite;
-    /* Se repite infinitamente */
-    animation-direction: alternate;
-    /* La animación va y vuelve */
+  /* Nombre de la animación */
+  animation-duration: 1s;
+  /* Un segundo por ciclo */
+  animation-iteration-count: infinite;
+  /* Se repite infinitamente */
+  animation-direction: alternate;
+  /* La animación va y vuelve */
 }
 
 
 
 
- @keyframes lata {
-   0% {
-     transform: scale(1);
-   }
+@keyframes lata {
+  0% {
+    transform: scale(1);
+  }
 
-   100% {
-     transform: scale(1.05);
-     /* Se agranda un 5% */
-   }
- }
+  100% {
+    transform: scale(1.05);
+    /* Se agranda un 5% */
+  }
+}
 
 @media only screen and (max-width: 900px) {
 
-html,
-body {
-  height: 100%;
+  html,
+  body {
+    height: 100%;
     font-size: 4vw;
-}
+  }
 }
 
 

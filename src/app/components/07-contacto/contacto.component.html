@@ -7,8 +7,8 @@
   </div>
   <form [formGroup]="miFormulario" (ngSubmit)="enviarFormulario()" class="form">
     <div class="item">
-      <input type="text" formControlName="nombre" />
-      <p>NOMBRE</p>
+      <input type="text" formControlName="nombre"  id="nombre-contacto"/>
+      <label for="nombre-contacto" >NOMBRE</label>
       <div *ngIf="
           miFormulario.get('nombre')?.invalid &&
           miFormulario.get('nombre')?.touched
@@ -18,8 +18,8 @@
     </div>
 
     <div class="item">
-      <input type="email" formControlName="email" />
-      <p>EMAIL</p>
+      <input type="email" formControlName="email"  id="email"/>
+      <label for="email">EMAIL</label>
       <div *ngIf="
           miFormulario.get('email')?.invalid &&
           miFormulario.get('email')?.touched
@@ -76,8 +76,8 @@
   </div>
   <form [formGroup]="miFormulario" (ngSubmit)="enviarFormulario()" class="form">
     <div class="item">
-      <input type="text" formControlName="nombre" />
-      <p>NOMBRE</p>
+      <input type="text" formControlName="nombre"  id="nombre-mobile"/>
+      <label for="nombre-mobile">NOMBRE</label>
       <div *ngIf="
           miFormulario.get('nombre')?.invalid &&
           miFormulario.get('nombre')?.touched
@@ -87,8 +87,8 @@
     </div>
 
     <div class="item">
-      <input type="email" formControlName="email" />
-      <p>EMAIL</p>
+      <input type="email" formControlName="email"  id="email-mobile"/>
+      <label for="email-mobile">EMAIL</label>
       <div *ngIf="
           miFormulario.get('email')?.invalid &&
           miFormulario.get('email')?.touched
